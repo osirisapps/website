@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osiris Yazılım Teknolojileri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --blue: #00D9FF; --dark: #050505; }
+        body { background: var(--dark); color: white; font-family: sans-serif; margin: 0; text-align: center; }
+        nav { padding: 20px; border-bottom: 1px solid #222; background: rgba(0,0,0,0.8); position: sticky; top: 0; }
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: radial-gradient(circle, #0a0a2a, #050505); }
+        h1 { font-size: 3rem; color: var(--blue); margin: 0; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 50px; max-width: 1100px; margin: 0 auto; }
+        .card { background: #111; padding: 30px; border-radius: 15px; border: 1px solid #222; transition: 0.3s; }
+        .card:hover { border-color: var(--blue); transform: translateY(-10px); }
+        .card i { font-size: 40px; color: var(--blue); margin-bottom: 15px; }
+        .contact { padding: 50px; background: #0a0a0a; }
+        input, textarea { width: 100%; max-width: 400px; padding: 15px; margin: 10px 0; background: #111; border: 1px solid #333; color: white; border-radius: 5px; }
+        .btn { background: var(--blue); color: black; padding: 15px 40px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; text-decoration: none; display: inline-block; }
+    </style>
+</head>
+<body>
+    <nav><strong>OSIRIS.</strong></nav>
+    <div class="hero">
+        <h1>Osiris Yazılım</h1>
+        <p>Geleceği Kodluyoruz.</p>
+        <a href="#portfolio" class="btn">Portföyü Gör</a>
+    </div>
+    <div id="portfolio" class="grid">
+        <div class="card"><i class="fas fa-mobile-alt"></i><h3>Mobil Uygulama</h3><p>iOS & Android Çözümleri</p></div>
+        <div class="card"><i class="fas fa-code"></i><h3>Web Yazılım</h3><p>Modern Web Sistemleri</p></div>
+        <div class="card"><i class="fas fa-rocket"></i><h3>Dijital Strateji</h3><p>Hızlı Büyüme Odaklı</p></div>
+    </div>
+    <div id="contact" class="contact">
+        <h2>İletişim</h2>
+        <form action="https://formspree.io/f/xyyvveko" method="POST">
+            <input type="text" name="ad" placeholder="Adınız" required><br>
+            <input type="email" name="email" placeholder="E-posta" required><br>
+            <textarea name="mesaj" placeholder="Mesajınız"></textarea><br>
+            <button type="submit" class="btn">Gönder</button>
+        </form>
+    </div>
+</body>
+</html>
